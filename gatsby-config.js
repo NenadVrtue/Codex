@@ -76,6 +76,13 @@ module.exports = {
         develop: false,
         tailwind: true,
       },
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        duration:750,
+        offset: -96
+      }
     }
   ],
 }
