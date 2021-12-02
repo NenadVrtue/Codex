@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-function Header({ siteTitle }) {
-  const [isExpanded, toggleExpansion] = useState(false)
+function Header({ toggleSidebar }) {
+  
 
   return (
-    <header className="fixed z-10 w-full h-24 bg-yellow-500">
-    <nav className="max-w-1170 mx-auto flex justify-between align-middle h-full px-4 xl:px-0 bg-gray-400">
+    <header className="fixed z-10 w-full h-24 bg-white">
+    <nav className="max-w-1170 mx-auto flex justify-between align-middle h-full px-4 xl:px-0 ">
       
       <AnchorLink to='/#pocetna'
           title='pocetna' className='my-auto min-w-8'>
@@ -92,7 +92,7 @@ function Header({ siteTitle }) {
           </AnchorLink>
         </div>
 
-        <a href="tel:8665562570" className='my-auto flex text-dark-blue font-body text-lg font-medium '>
+        <a href="tel:8665562570" className='hidden lg:flex my-auto  text-dark-blue font-body text-lg font-medium '>
           <span className='mr-2'>
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.5 23C17.8513 23 23 17.8513 23 11.5C23 5.14873 17.8513 0 11.5 0C5.14873 0 0 5.14873 0 11.5C0 17.8513 5.14873 23 11.5 23Z" fill="url(#paint0_linear_241_2375)"/>
@@ -106,9 +106,24 @@ function Header({ siteTitle }) {
               </defs>
             </svg>
           </span>+38765/569-196</a>
+
+          <nav className='hidden md:flex items-middle font-display text-lg text-gray'>
+            <Link to='/' className='my-auto' activeClassName='text-dark-blue'>SR</Link>
+            <span className='my-auto px-1 text-dark-blue'>|</span>
+            <Link to='/en' className='my-auto' activeClassName='text-dark-blue'>EN</Link>
+          </nav>
       
-      
-      
+          <div className="block md:hidden py-1 my-auto">
+             <button className='flex items-center px-3 py-2 text-dark-blue' onClick={toggleSidebar}>
+             <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36 24H0V20H36V24ZM36 14H0V10H36V14ZM36 4H0V0H36V4Z" fill="#1E3A8A"/>
+<title>Menu</title>
+</svg>
+
+                 
+                 
+             </button>
+      </div>
     </nav>
     </header>
   )

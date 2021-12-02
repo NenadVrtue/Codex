@@ -10,7 +10,9 @@ module.exports = {
     extend: {
 
       colors:{
-        'dark-blue': '#323667'
+        'dark-blue': '#323667',
+        'gray':'#9FB0BF',
+        'light-blue': '#29B8E8'
       },
 
       maxWidth:{
