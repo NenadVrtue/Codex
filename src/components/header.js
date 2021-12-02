@@ -7,10 +7,12 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <header className="fixed z-10 w-full h-24 bg-blue-900">
-    <nav className="max-w-1170 mx-auto flex justify-between align-middle h-full">
+    <header className="fixed z-10 w-full h-24 bg-yellow-500">
+    <nav className="max-w-1170 mx-auto flex justify-between align-middle h-full px-4 xl:px-0 bg-gray-400">
       
-      <svg width="155" height="50" viewBox="0 0 155 50" fill="none" xmlns="http://www.w3.org/2000/svg" className='my-auto'>
+      <AnchorLink to='/#pocetna'
+          title='pocetna' className='my-auto min-w-8'>
+      <svg width="155" height="50" viewBox="0 0 155 50" fill="none" xmlns="http://www.w3.org/2000/svg" >
         <path d="M68.3649 35.7932C60.9362 35.7932 57.2357 30.9474 57.2357 23.5043C57.2357 15.8134 61.15 11.1787 68.7926 11.1787C71.7493 11.1787 74.1294 11.8854 75.9425 13.3538C77.6439 14.8681 78.6109 16.9331 78.8619 19.5304H75.8681C74.7989 19.5304 74.0179 19.044 73.553 18.0895C72.7348 16.3733 71.1356 15.4922 68.7833 15.4922C64.1903 15.4922 62.1727 18.6861 62.1727 23.4952C62.1727 28.1666 64.1252 31.4706 68.6439 31.4706C71.74 31.4706 73.5158 29.791 74.0458 27.1479H78.8526C78.3877 32.6637 74.4827 35.7932 68.3649 35.7932Z" fill="#323667"/>          <path d="M85.9004 26.2389C85.9376 29.8549 87.1835 31.6813 89.6008 31.6813C92.0182 31.6813 93.2269 29.7907 93.2641 26.1012C93.2641 22.4852 92.0554 20.6956 89.638 20.6956C87.137 20.6956 85.9004 22.5587 85.9004 26.2389ZM98.2011 26.2389C98.2011 32.6266 95.3188 35.8571 89.6287 35.8571C83.9386 35.8571 81.0935 32.6266 81.0935 26.2389C81.0935 19.7778 83.9386 16.584 89.6287 16.584C95.3188 16.5932 98.2011 19.787 98.2011 26.2389Z" fill="#323667"/>
         <path d="M105.137 26.1015C105.099 29.8552 106.382 31.755 109.088 31.755C111.794 31.755 113.142 29.8644 113.142 26.1015C113.04 22.5222 111.719 20.7693 109.162 20.7693C106.596 20.7693 105.276 22.5222 105.137 26.1015ZM117.828 13.9227V27.4047C117.828 32.9848 114.871 35.7564 109.004 35.7197C103.175 35.6188 100.255 32.4892 100.255 26.3126C100.255 19.9892 102.747 16.7586 107.758 16.5934C110.101 16.5934 111.924 17.5387 113.123 19.4752V11.5732H115.466C116.768 11.5732 117.828 12.6562 117.828 13.9227Z" fill="#323667"/>
         <path d="M124.773 24.1372H131.849C131.57 21.6776 130.389 20.4203 128.362 20.4203C126.335 20.4111 125.127 21.6776 124.773 24.1372ZM128.362 35.8571C122.672 35.6827 119.827 32.4155 119.827 26.1012C119.827 19.787 122.709 16.6207 128.437 16.584C134.415 16.584 137.223 20.2 136.86 27.4687H124.699C124.876 30.3138 126.122 31.7547 128.437 31.7547C129.543 31.7547 130.566 31.2958 131.496 30.4147C131.923 29.9559 132.453 29.7448 133.095 29.7448H136.581C135.54 33.682 132.983 35.8571 128.362 35.8571Z" fill="#323667"/>
@@ -46,19 +48,23 @@ function Header({ siteTitle }) {
         </linearGradient>
         </defs>
       </svg>
-      
-      <div className="text-sm space-x-4 flex align-middle">
+      </AnchorLink>
+
+      <div className="space-x-4 md:flex align-middle hidden text-dark-blue font-body text-lg font-medium">
           <AnchorLink 
           to='/#pocetna'
           title='pocetna'
-            className="my-auto  text-white  hover:text-white"
+            className="my-auto "
+            
+            
           >
-            pocetna
+            Početna
           </AnchorLink>
           <AnchorLink
             to='/#usluge'
             title='usluge'
-            className="stripped my-auto text-white  hover:text-white"
+            className="stripped my-auto "
+            
           >
             Usluge
           </AnchorLink>
@@ -66,27 +72,40 @@ function Header({ siteTitle }) {
           <AnchorLink
             to='/#cjenovnik'
             title='cjenovnik'
-            className="stripped my-auto text-white  hover:text-white"
+            className="stripped my-auto "
           >
-            cjenovnik
+            Cjenovnik
           </AnchorLink>
           <AnchorLink
             to='/#o-nama'
             title='o-nama'
-            className="stripped my-auto text-white  hover:text-white"
+            className="stripped my-auto "
           >
             O Nama
           </AnchorLink>
           <AnchorLink
             to='/#kontakt'
             title='kontakt'
-            className="stripped my-auto text-white hover:text-white"
+            className="stripped my-auto "
           >
             Kontakt
           </AnchorLink>
         </div>
 
-        <a href="tel:8665562570" className='my-auto'>Call us at 866-556-2570</a>
+        <a href="tel:8665562570" className='my-auto flex text-dark-blue font-body text-lg font-medium '>
+          <span className='mr-2'>
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 23C17.8513 23 23 17.8513 23 11.5C23 5.14873 17.8513 0 11.5 0C5.14873 0 0 5.14873 0 11.5C0 17.8513 5.14873 23 11.5 23Z" fill="url(#paint0_linear_241_2375)"/>
+              <path d="M16.7099 14.9943V5.69691C16.7099 4.65916 15.8628 3.81201 14.825 3.81201H8.17491C7.13715 3.81201 6.29001 4.65916 6.29001 5.69691V14.9943H16.7099ZM11.5 4.99802C11.8176 4.99802 12.0718 5.25216 12.0718 5.56984C12.0718 5.88752 11.8176 6.14166 11.5 6.14166C11.1823 6.14166 10.9281 5.88752 10.9281 5.56984C10.9281 5.25216 11.1823 4.99802 11.5 4.99802Z" fill="white"/>
+              <path d="M6.29001 16.1167V17.3027C6.29001 18.3405 7.13715 19.1876 8.17491 19.1876H14.825C15.8628 19.1876 16.7099 18.3405 16.7099 17.3027V16.1167H6.29001ZM11.5 18.1287C11.1823 18.1287 10.9281 17.8745 10.9281 17.5568C10.9281 17.2392 11.1823 16.985 11.5 16.985C11.8176 16.985 12.0718 17.2392 12.0718 17.5568C12.0718 17.8745 11.8176 18.1287 11.5 18.1287Z" fill="white"/>
+              <defs>
+              <linearGradient id="paint0_linear_241_2375" x1="-10.4675" y1="-30.1696" x2="46.4956" y2="77.8815" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#24E8B9"/>
+              <stop offset="1" stop-color="#29A9F5"/>
+              </linearGradient>
+              </defs>
+            </svg>
+          </span>+38765/569-196</a>
       
       
       

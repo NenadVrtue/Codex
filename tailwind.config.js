@@ -3,6 +3,10 @@ module.exports = {
   future: {},
   purge: [],
   theme: {
+    fontFamily:{
+      'body':['Epilogue', 'sans-serif'],
+      'display':['Public Sans', 'sans-serif']
+    },
     extend: {
 
       colors:{
