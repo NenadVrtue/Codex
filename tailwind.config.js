@@ -8,7 +8,9 @@ module.exports = {
       'display':['Public Sans', 'sans-serif']
     },
     extend: {
-
+      screens:{
+        'mob':'425px'
+      },
       colors:{
         'dark-blue': '#323667',
         'gray':'#8C9CAC',

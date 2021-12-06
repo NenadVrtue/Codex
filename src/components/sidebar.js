@@ -71,7 +71,7 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
           </nav>
 
 
-          <a href="tel:8665562570" className='flex text-white font-body text-lg font-medium '>
+          <a href="tel:+38765569196" className='flex text-white font-body text-lg font-medium '>
           <span className='mr-2'>
             <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_207_2642)">
