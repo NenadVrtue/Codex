@@ -1,13 +1,13 @@
 @tailwind base;
 
 h1 {
-  @apply text-2xl font-display;
+  @apply  font-display;
 }
 h2 {
-  @apply text-xl font-display;
+  @apply font-display text-h2 text-dark-blue;
 }
 h3 {
-  @apply text-lg font-display;
+  @apply  font-display;
 }
 
 
@@ -15,6 +15,13 @@ body{
   @apply font-body;
 }
 
+
+@tailwind components;
+
+.usluge{
+
+  @apply text-22 text-dark-blue font-bold text-left
+}
 .btn-prim{
   @apply text-xl bg-dark-blue text-white py-4 px-16 rounded-lg bg-gradient-to-br hover:from-gradient-1 hover:to-gradient-2 
 }
@@ -22,5 +29,5 @@ body{
 .btn-sec{
   @apply text-xl box-border  border-2 border-dark-blue text-dark-blue py-3.5 px-16 rounded-lg hover:bg-dark-blue hover:text-white
 }
-@tailwind components;
+
 @tailwind utilities;
