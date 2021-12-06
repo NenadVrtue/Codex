@@ -15,5 +15,12 @@ body{
   @apply font-body;
 }
 
+.btn-prim{
+  @apply text-xl bg-dark-blue text-white py-4 px-16 rounded-lg bg-gradient-to-br hover:from-gradient-1 hover:to-gradient-2 
+}
+
+.btn-sec{
+  @apply text-xl box-border  border-2 border-dark-blue text-dark-blue py-3.5 px-16 rounded-lg hover:bg-dark-blue hover:text-white
+}
 @tailwind components;
 @tailwind utilities;
