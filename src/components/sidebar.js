@@ -5,7 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 const Sidebar = ({isOpen, toggleSidebar}) => {
     
     return (
-        <div className={isOpen? " flex flex-col space-y-8 align-middle justify-center fixed z-20 top-0 w-1/2 px-4  pl-8 h-screen right-0 bg-dark-blue"  : 'hidden'}>
+        <div className={isOpen? " flex flex-col space-y-8 align-middle justify-center fixed z-20 top-0 w-2/3 px-4  pl-8 h-screen right-0 bg-dark-blue"  : 'hidden'}>
           
           <button className="fixed top-6 font-body text-light-blue right-2" onClick={toggleSidebar}>
           <svg  width="48" height="48" viewBox="0 0 48 48" fill="#29B8E8" xmlns="http://www.w3.org/2000/svg">
