@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 
-const Collapse = ({ collapsed, children }) => {
+const CollapseOnama = ({ collapsed, children }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -15,13 +15,13 @@ const Collapse = ({ collapsed, children }) => {
 
       </div>
       <button
-        className="text-xl text-dark-blue mt-9 z-10"
+        className="text-lg text-dark-blue inline"
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
-       <span className='text-light-blue text-3xl'>{isCollapsed ? '- ' : '+ '}</span> Prikaži {isCollapsed ? 'Manje' : 'Više'} 
+       <span className='text-gray'>{isCollapsed ? '' : '...'}</span> Vidi {isCollapsed ? 'Manje' : 'Još'} 
       </button>
       
     </>
   );
 };
-export default Collapse
+export default CollapseOnama

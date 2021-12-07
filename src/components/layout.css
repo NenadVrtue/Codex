@@ -4,11 +4,13 @@ h1 {
   @apply  font-display;
 }
 h2 {
-  @apply font-display text-h2 text-dark-blue;
+  @apply font-display text-h2 ;
 }
 h3 {
   @apply  font-display;
 }
+
+
 
 
 body{
@@ -28,6 +30,10 @@ body{
 
 .btn-sec{
   @apply text-xl box-border  border-2 border-dark-blue text-dark-blue py-3.5 px-16 rounded-lg hover:bg-dark-blue hover:text-white
+}
+
+.btn-ter{
+  @apply text-xl box-border bg-gradient-to-br from-gradient-1 to-gradient-2  text-dark-blue py-4 px-8 rounded-lg  hover:text-white
 }
 
 @tailwind utilities;
