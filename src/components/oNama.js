@@ -6,9 +6,9 @@ import CollapseOnama from './collapseOnama'
 
 const ONama = () => {
     return (
-        <section id='o-nama' className='pt-16 xl:pt-28 pb-16'>
+        <section id='o-nama' className='pt-16 xl:pt-28 pb-16 px-4'>
 
-        <div className='max-w-1170 mx-auto px-4 lg:px-0 flex flex-col lg:flex-row  items-center justify-between '>
+        <div className='max-w-1170 mx-auto px-4 lg:px-0 flex flex-col lg:flex-row  items-center lg:items-start justify-between '>
                     <div className='text-gray  text-center lg:text-left lg:w-2/4 '>
                     <h2 className='text-dark-blue'>O Nama</h2>
                     <h4 className='text-gray-2 text-base font-semibold'>Izaberite najbolje</h4>
