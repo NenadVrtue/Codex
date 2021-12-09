@@ -4,7 +4,7 @@ module.exports = {
     description: `Codex Agencija Stevo Tadić s.p. pruža knjigovodstvene usluge, prilagođene poslovanju sa velikim, srednjim i malim preduzećima`,
     author: `VrtueDigital`,
     titleTemplate:  `%s | Codex Knjigovodstvena Agencija`,
-    image: `/OG.png`
+    image: `https://dazzling-visvesvaraya-c13c1d.netlify.app/OG.png`
   },
   flags: {
     THE_FLAG: false
