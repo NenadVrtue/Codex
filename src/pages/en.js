@@ -5,16 +5,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-import Cjenovnik from "../components/cjenovnik"
-import ONama from "../components/oNama"
-import Kontakt from "../components/kontakt"
+
 import HeaderEN from "../components/en/headerEN"
 import SidebarEN from "../components/en/sidebarEN"
 import HeroEN from "../components/en/heroEn"
 import ServicesEN from "../components/en/servicesEN"
 import PricingEN from "../components/en/pricingEN"
 import AboutEN from "../components/en/aboutEN"
-import ContactEN from "../components/en/contactEN"
+import ContactEN from "../components/contactEN"
 import FooterEN from "../components/en/footerEN"
 
 const EnPage = () => {

@@ -61,7 +61,7 @@ function HeaderEN({ toggleSidebarEN }) {
             Start
           </AnchorLink>
           <AnchorLink
-            to='/#services'
+            to='/en/#services'
             title='services'
             className="stripped my-auto "
             
@@ -70,21 +70,21 @@ function HeaderEN({ toggleSidebarEN }) {
           </AnchorLink>
 
           <AnchorLink
-            to='/#pricing'
+            to='/en/#pricing'
             title='pricing'
             className="stripped my-auto "
           >
             Pricing
           </AnchorLink>
           <AnchorLink
-            to='/#about'
+            to='/en/#about'
             title='about'
             className="stripped my-auto "
           >
             About Us
           </AnchorLink>
           <AnchorLink
-            to='/#contact'
+            to='/en/#contact'
             title='contact'
             className="stripped my-auto "
           >
@@ -110,7 +110,7 @@ function HeaderEN({ toggleSidebarEN }) {
           <nav className='hidden md:flex items-middle font-display text-lg text-gray'>
             <Link to='/' className='my-auto' activeClassName='text-dark-blue'>SR</Link>
             <span className='my-auto px-1 text-dark-blue'>|</span>
-            <Link to='/en' className='my-auto' activeClassName='text-dark-blue'>EN</Link>
+            <Link to='/en' className='my-auto text-dark-blue' activeClassName='text-dark-blue'>EN</Link>
           </nav>
       
           <div className="block md:hidden py-1 my-auto">

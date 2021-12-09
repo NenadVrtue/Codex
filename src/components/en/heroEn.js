@@ -30,7 +30,7 @@ const HeroEN = () => {
             <StaticImage 
             src='../images/codex-knjigovođa-hero.png' 
             alt='knjigovođa' 
-            className=' rounded-l-none   ' 
+            className=' rounded-r-large lg:rounded-r-none   '
             placeholder="blurred"
             loading='eager'
             quality='100'

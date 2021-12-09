@@ -30,7 +30,7 @@ const SidebarEN = ({isOpen, toggleSidebarEN}) => {
             Start
           </AnchorLink>
           <AnchorLink
-            to='/#services'
+            to='/en/#services'
             title='services'
             className="stripped my-auto "
             
@@ -39,23 +39,23 @@ const SidebarEN = ({isOpen, toggleSidebarEN}) => {
           </AnchorLink>
 
           <AnchorLink
-            to='/#pricing'
+            to='/en/#pricing'
             title='pricing'
             className="stripped my-auto "
           >
             Pricing
           </AnchorLink>
           <AnchorLink
-            to='/#about'
+            to='/en/#about'
             title='about'
             className="stripped my-auto "
           >
             About Us
           </AnchorLink>
           <AnchorLink
-            to='/#contact'
+            to='/en/#contact'
             title='contact'
-            className="stripped my-auto "
+            className=" my-auto "
           >
               Contact
           </AnchorLink>
@@ -67,7 +67,7 @@ const SidebarEN = ({isOpen, toggleSidebarEN}) => {
      <nav className='  flex items-middle font-display text-lg text-gray'>
             <Link to='/' className='my-auto' activeClassName='text-white'>SR</Link>
             <span className='my-auto px-1 text-white'>|</span>
-            <Link to='/en' className='my-auto' activeClassName='text-white'>EN</Link>
+            <Link to='/en' className='my-auto text-white' activeClassName='text-white'>EN</Link>
           </nav>
 
 

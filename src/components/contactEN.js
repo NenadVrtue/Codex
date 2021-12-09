@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import { StaticImage } from 'gatsby-plugin-image'
-import ContactFormEN from './contactForm'
+import ContactFormEN from './en/contactForm'
 
 const ContactEN = () => {
     return (
