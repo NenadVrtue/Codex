@@ -9,6 +9,7 @@ import Cjenovnik from "../components/cjenovnik"
 import ONama from "../components/oNama"
 import Kontakt from "../components/kontakt"
 import Sidebar from "../components/sidebar"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +20,7 @@ const IndexPage = () => {
  
   return(
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Stevo Tadić" />
     <Header toggleSidebar={toggleSidebar} ></Header>
     <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}></Sidebar>
     <Hero />
@@ -27,6 +28,7 @@ const IndexPage = () => {
     <Cjenovnik />
     <ONama />
     <Kontakt />
+    <Footer></Footer> 
   </Layout>
 )}
 

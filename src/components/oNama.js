@@ -32,8 +32,8 @@ const ONama = () => {
                     <AnchorLink 
                     to='/#kontakt'
                     title='kontakt'
-                    className="stripped mx-auto lg:ml-0 block w-52 my-auto btn-ter mb-4 xl:mb-12 mt-8 lg:mt-12">
-                    Pošalji poruku
+                    className="stripped mx-auto lg:ml-0 block w-52 my-auto btn-prim mb-4 xl:mb-12 mt-8 lg:mt-12">
+                    Kontakt
                     </AnchorLink>  
                 </div>
                 

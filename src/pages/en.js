@@ -1,27 +1,41 @@
-import React from "react"
+import React,{useState} from "react"
 
-import Header from "../components/header"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Usluge from "../components/usluge"
+
+
 import Cjenovnik from "../components/cjenovnik"
 import ONama from "../components/oNama"
 import Kontakt from "../components/kontakt"
+import HeaderEN from "../components/en/headerEN"
+import SidebarEN from "../components/en/sidebarEN"
+import HeroEN from "../components/en/heroEn"
+import ServicesEN from "../components/en/servicesEN"
+import PricingEN from "../components/en/pricingEN"
+import AboutEN from "../components/en/aboutEN"
+import ContactEN from "../components/en/contactEN"
+import FooterEN from "../components/en/footerEN"
 
+const EnPage = () => {
+  const [isOpen, setIsOpen] = useState(false)
 
-const IndexPage = () => (
+  const toggleSidebarEN = () => {
+    setIsOpen(!isOpen);
+  }
+ 
+  return (
   <Layout>
-    <SEO title="Home" />
-    <Header />
-    
-    <Hero />
-    <h1 >Engleski</h1>
-    <Usluge />
-    <Cjenovnik />
-    <ONama />
-    <Kontakt />
+    <SEO title="Stevo Tadić" />
+    <HeaderEN toggleSidebarEN={toggleSidebarEN}></HeaderEN>
+    <SidebarEN isOpen={isOpen} toggleSidebarEN={toggleSidebarEN}></SidebarEN>
+    <HeroEN></HeroEN>
+    <ServicesEN></ServicesEN>
+    <PricingEN></PricingEN>
+    <AboutEN></AboutEN>
+    <ContactEN></ContactEN>
+    <FooterEN></FooterEN>
   </Layout>
-)
+  )}
 
-export default IndexPage
+export default EnPage

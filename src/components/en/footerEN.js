@@ -3,7 +3,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
-const Footer = () => {
+const FooterEN = () => {
     return (
         <footer className="bg-dark-blue text-white pt-10 pb-2">
             <div className='max-w-1170 mx-auto px-4 xl:px-0'>
@@ -40,7 +40,7 @@ const Footer = () => {
                         </svg>
 
                         <p className='mt-2 font-medium text-base'>Stevo Tadić</p>
-                        <p className='text-sm'>dipl. ekonomista</p>
+                        <p className='text-sm'>graduate accountant</p>
 
                         <div className='flex space-x-2 mt-1.5'>
                             <a href='#'>
@@ -64,38 +64,38 @@ const Footer = () => {
                         <nav className='flex flex-col space-y-1 font-body text-center md:text-left pb-6 pt-8  sm:pt-2'>
                         
                             <AnchorLink
-                                to='/#usluge'
-                                title='usluge'
+                                to='/en/#services'
+                                title='services'
                                 className="stripped my-auto "
                                 
                             >
-                                Usluge
+                                Services
                             </AnchorLink>
 
                             
                             <AnchorLink
-                                to='/#o-nama'
-                                title='o-nama'
+                                to='/en/#about'
+                                title='about'
                                 className="stripped my-auto "
                             >
-                                O Nama
+                                About Us
                             </AnchorLink>
                             <AnchorLink
-                                to='/#kontakt'
-                                title='kontakt'
+                                to='/en/#contact'
+                                title='contact'
                                 className="stripped my-auto "
                             >
-                                Kontakt
+                                Contact
                             </AnchorLink>
-                            <Link to='/privatnost'>Politika Privatnosti</Link>
-                           
+                            <Link to='/privacy'>Privacy Policy</Link>
+                            
                         
                         </nav>
 
-                        <div className="flex flex-col items-center sm:items-start pt-2 "> 
-                                <p>Radno vrijeme: Pon-Pet 09-17h</p>
+                        <div className="flex flex-col space-y-1 items-center sm:items-start pt-2 "> 
+                                <p>Work Hours: Pon-Pet 09-17h</p>
                                 <p className='text-center'>JIB :450920150001  </p>
-                                <p>Ž.R. MF Banka: 572-206-00000810-43</p>
+                                <p>G.A. MF Banka: 572-206-00000810-43</p>
                         </div>
                     </div>
 
@@ -148,7 +148,7 @@ const Footer = () => {
                
                     <div className=" flex flex-col sm:flex-row text-center sm:justify-between align-baseline max-w-1170 mx-auto mt-4 ">
                 
-                        <p className='py-0 sm:py-4'>© {new Date().getFullYear()} Codex Agencija</p>
+                        <p className='py-0 sm:py-4'>© {new Date().getFullYear()} Codex Agency</p>
                         <p className='py-0 sm:py-4'>Made by <a href='https://vrtuedigital.com/' target='_blank' rel='noreferrer'>Vrtue Digital</a></p>
                     </div>
                 </div>
@@ -157,4 +157,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default FooterEN

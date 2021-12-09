@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-const Sidebar = ({isOpen, toggleSidebar}) => {
+const SidebarEN = ({isOpen, toggleSidebarEN}) => {
     
     return (
         <div className={isOpen? " flex flex-col space-y-8 align-middle justify-center fixed top-0 w-2/3 px-4  pl-8 h-screen right-0 bg-dark-blue z-40"  : 'hidden'}>
           
-          <button className="fixed top-6 font-body text-light-blue right-2" onClick={toggleSidebar}>
+          <button className="fixed top-6 font-body text-light-blue right-2" onClick={toggleSidebarEN}>
           <svg  width="48" height="48" viewBox="0 0 48 48" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
 <line x1="1.41421" y1="1.58579" x2="21.9203" y2="22.0919" stroke="#ffffff" stroke-width="4"/>
 <line x1="1.58579" y1="22.0919" x2="22.0919" y2="1.58579" stroke="#ffffff" stroke-width="4"/>
@@ -21,43 +21,43 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
             
           
           <AnchorLink 
-          to='/#pocetna'
-          title='pocetna'
+          to='/en'
+          title='start'
             className=" "
             
             
           >
-            Početna
+            Start
           </AnchorLink>
           <AnchorLink
-            to='/#usluge'
-            title='usluge'
+            to='/#services'
+            title='services'
             className="stripped my-auto "
             
           >
-            Usluge
+            Services
           </AnchorLink>
 
           <AnchorLink
-            to='/#cjenovnik'
-            title='cjenovnik'
+            to='/#pricing'
+            title='pricing'
             className="stripped my-auto "
           >
-            Cjenovnik
+            Pricing
           </AnchorLink>
           <AnchorLink
-            to='/#o-nama'
-            title='o-nama'
+            to='/#about'
+            title='about'
             className="stripped my-auto "
           >
-            O Nama
+            About Us
           </AnchorLink>
           <AnchorLink
-            to='/#kontakt'
-            title='kontakt'
+            to='/#contact'
+            title='contact'
             className="stripped my-auto "
           >
-            Kontakt
+              Contact
           </AnchorLink>
         
             
@@ -95,4 +95,4 @@ const Sidebar = ({isOpen, toggleSidebar}) => {
     )
 }
 
-export default Sidebar
+export default SidebarEN
