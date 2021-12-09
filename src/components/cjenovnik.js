@@ -4,13 +4,13 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const Cjenovnik = () => {
     return (
-        <section id='cjenovnik' className='bg-bg-blue z-0 relative pt-11 lg:pt-20 pb-11'>
-            <div className='max-w-1440 mx-auto px-4 lg:px-0 flex flex-col-reverse lg:flex-row z-20 items-center justify-between '>
+        <section id='cjenovnik' className='bg-bg-blue z-0  overflow-hidden   '>
+            <div className='max-w-1440 h-full pt-11 lg:pt-20 pb-11 mx-auto px-4 lg:px-0 flex flex-col-reverse lg:flex-row z-20 items-center justify-between relative'>
                 <div>
                 <StaticImage
                 src='../images/cijena.png' 
                 alt='cjenovnik slika' 
-                className=' z-20 mt-12 lg:mt-0 lg:-ml-10 rounded-large lg:rounded-l-none 3xl:rounded-l-large' 
+                className=' z-20 mt-12 lg:mt-0 lg:-ml-10 rounded-large lg:rounded-l-none ' 
                 placeholder="blurred"
                 quality='100'></StaticImage>
                 </div>
@@ -25,12 +25,15 @@ const Cjenovnik = () => {
                     Pošalji poruku
                   </AnchorLink>  
                 </div>
+                <div className='absolute z-10 top-0 right-0 w-full lg:w-3/4 lg:-mr-10  bg-dark-blue lg:rounded-tl-large h-full'>
+            </div>
+
+           
             </div>
 
             
 
-            <div className='absolute z-10 top-0 right-0 w-full lg:w-3/4 bg-dark-blue lg:rounded-tl-large h-full'>
-            </div>
+            
         </section>
     )
 }

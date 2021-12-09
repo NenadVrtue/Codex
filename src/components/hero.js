@@ -26,11 +26,11 @@ const Hero = () => {
                   </AnchorLink>
               </div>
           </div>
-          <div className='mx-auto sm:w-3/4 lg:w-auto lg:-mr-48 my-auto w-full lg:ml-auto'>
+          <div className='mx-auto sm:w-3/4 lg:w-auto lg:-mr-44  my-auto w-full lg:ml-auto'>
             <StaticImage 
             src='../images/codex-knjigovođa-hero.png' 
             alt='knjigovođa' 
-            className='   ' 
+            className=' rounded-l-none   ' 
             placeholder="blurred"
             loading='eager'
             quality='100'

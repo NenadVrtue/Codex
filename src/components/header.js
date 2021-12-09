@@ -7,7 +7,7 @@ function Header({ toggleSidebar }) {
   
 
   return (
-    <header className="fixed z-10 w-full h-24 bg-white">
+    <header className="fixed z-30 w-full h-24 bg-white">
     <nav className="max-w-1170 mx-auto flex justify-between align-middle h-full px-4 xl:px-0 ">
       
       <AnchorLink to='/#pocetna'
