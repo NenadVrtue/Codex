@@ -32,8 +32,8 @@ module.exports = {
         name: `Codex Agencija`,
         short_name: `Codex`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#323667`,
+        theme_color: `#323667`,
         display: `minimal-ui`,
         icon: `src/images/Codex-favicon.png`, // This path is relative to the root of the site.
       },
@@ -88,7 +88,7 @@ module.exports = {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         duration:750,
-        offset: -96
+        offset: -95
       }
     },
     
