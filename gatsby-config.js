@@ -3,12 +3,12 @@ module.exports = {
     title: `Codex Agencija`,
     description: `Codex Agencija Stevo Tadić s.p. pruža knjigovodstvene usluge, prilagođene poslovanju sa velikim, srednjim i malim preduzećima`,
     author: `VrtueDigital`,
-    titleTemplate:  `%s | Codex Knjigovodstvena Agencija`,
+    titleTemplate: `%s | Codex Knjigovodstvena Agencija`,
     image: `/OG.png`,
-    siteUrl: `codexagencija.org`
+    siteUrl: `https://codexagencija.org/`,
   },
   flags: {
-    THE_FLAG: false
+    THE_FLAG: false,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,10 +18,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-     
     },
-
-    
 
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -73,8 +70,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
-      }
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -87,11 +84,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        duration:750,
-        offset: -95
-      }
+        duration: 750,
+        offset: -95,
+      },
     },
-    
+
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -99,19 +96,19 @@ module.exports = {
           google: [
             {
               family: "Epilogue",
-              variants: [ "500", '600', '700'],
-              subsets: ['latin-ext'],
+              variants: ["500", "600", "700"],
+              subsets: ["latin-ext"],
               //text: 'Hello'
               //fontDisplay: 'swap',
-              strategy: 'selfHosted' // 'base64' || 'cdn'
+              strategy: "selfHosted", // 'base64' || 'cdn'
             },
             {
               family: "Public Sans",
-              variants: [ '600', '700', '800'],
-              subsets: ['latin-ext'],
+              variants: ["600", "700", "800"],
+              subsets: ["latin-ext"],
               //text: 'Hello'
               //fontDisplay: 'swap',
-              strategy: 'selfHosted' // 'base64' || 'cdn'
+              strategy: "selfHosted", // 'base64' || 'cdn'
             },
           ],
         },
