@@ -5,7 +5,7 @@ module.exports = {
     author: `VrtueDigital`,
     titleTemplate:  `%s | Codex Knjigovodstvena Agencija`,
     image: `/OG.png`,
-    siteUrl: `https://dazzling-visvesvaraya-c13c1d.netlify.app/`
+    siteUrl: `codexagencija.org`
   },
   flags: {
     THE_FLAG: false
